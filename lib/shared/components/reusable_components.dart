@@ -93,20 +93,22 @@ Widget buildStartCard({
           height: MediaQuery.of(context).size.height*0.21,
           child: Card(
             // color: HexColor('#ECF0F1'),
-            child: Center(
-              child: Column(
-                children: [
-                   SizedBox(height: MediaQuery.of(context).size.height*0.03),
-                  Image(image: AssetImage(image),width: 60, height: 60),
-                   SizedBox(height: MediaQuery.of(context).size.height*0.02),
-                  Text(
-                    text,
-                    style: TextStyle(
-                      color: color == Colors.black ? Colors.white : Colors.black,
-                      fontSize: 20,
+            child: SingleChildScrollView(
+              child: Center(
+                child: Column(
+                  children: [
+                     SizedBox(height: MediaQuery.of(context).size.height*0.03),
+                    Image(image: AssetImage(image),width: 60, height: 60),
+                     SizedBox(height: MediaQuery.of(context).size.height*0.02),
+                    Text(
+                      text,
+                      style: TextStyle(
+                        color: color == Colors.black ? Colors.white : Colors.black,
+                        fontSize: 20,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
